@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="nsProxyRFBCNJ" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="nsProxyRFBCNJ" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="nsProxyRFBCNJ/Imports">
+      <xsd:import schemaLocation="http://pessoa-hom.tjmt.jus.br/api/SOAPService.svc?xsd=xsd0" namespace="nsProxyRFBCNJ" />
+      <xsd:import schemaLocation="http://pessoa-hom.tjmt.jus.br/api/SOAPService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISOAPService_ConsultarCPFP3_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCPFP3" />
+  </wsdl:message>
+  <wsdl:message name="ISOAPService_ConsultarCPFP3_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCPFP3Response" />
+  </wsdl:message>
+  <wsdl:message name="ISOAPService_ConsultarCNPJP3_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCNPJP3" />
+  </wsdl:message>
+  <wsdl:message name="ISOAPService_ConsultarCNPJP3_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConsultarCNPJP3Response" />
+  </wsdl:message>
+  <wsdl:portType name="ISOAPService">
+    <wsdl:operation name="ConsultarCPFP3">
+      <wsdl:input wsaw:Action="nsProxyRFBCNJ#ConsultarCPFP3" message="tns:ISOAPService_ConsultarCPFP3_InputMessage" />
+      <wsdl:output wsaw:Action="nsProxyRFBCNJ/ISOAPService/ConsultarCPFP3Response" message="tns:ISOAPService_ConsultarCPFP3_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCNPJP3">
+      <wsdl:input wsaw:Action="nsProxyRFBCNJ#ConsultarCNPJP3" message="tns:ISOAPService_ConsultarCNPJP3_InputMessage" />
+      <wsdl:output wsaw:Action="nsProxyRFBCNJ/ISOAPService/ConsultarCNPJP3Response" message="tns:ISOAPService_ConsultarCNPJP3_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

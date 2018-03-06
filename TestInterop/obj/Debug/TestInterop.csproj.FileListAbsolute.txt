@@ -1,0 +1,7 @@
+C:\Users\29797\Documents\Visual Studio 2017\Projects\TestInterop\TestInterop\bin\Debug\TestInterop.exe.config
+C:\Users\29797\Documents\Visual Studio 2017\Projects\TestInterop\TestInterop\bin\Debug\TestInterop.exe
+C:\Users\29797\Documents\Visual Studio 2017\Projects\TestInterop\TestInterop\bin\Debug\TestInterop.pdb
+C:\Users\29797\Documents\Visual Studio 2017\Projects\TestInterop\TestInterop\obj\Debug\TestInterop.csprojResolveAssemblyReference.cache
+C:\Users\29797\Documents\Visual Studio 2017\Projects\TestInterop\TestInterop\obj\Debug\TestInterop.csproj.CoreCompileInputs.cache
+C:\Users\29797\Documents\Visual Studio 2017\Projects\TestInterop\TestInterop\obj\Debug\TestInterop.exe
+C:\Users\29797\Documents\Visual Studio 2017\Projects\TestInterop\TestInterop\obj\Debug\TestInterop.pdb
